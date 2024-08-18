@@ -106,7 +106,7 @@ label,span{
  .radio-control{
     margin-bottom:2rem;
  }
- .split-radio.active{
+ .split-radio .active{
     background-color: var(--GreenLighter);
  }
  .terms-wrapper{
@@ -146,7 +146,9 @@ label,span{
     font-size: 0.75rem;
     margin-bottom:1rem ;
     color:var(--Red);
+   
  }
+
  @media (max-width:640px){
     .wrapper{
         padding: 1rem;
@@ -162,3 +164,4 @@ label,span{
         width:100%;
     }
  }
+ 
