@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="stylesheet" href="./fonts/Karla-Italic-VariableFont_wght.ttf">
+<link rel="stylesheet" href="./fonts/Karla-VariableFont_wght.ttf">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+
+<div class="container">
+    <div class="wrapper">
+        <h2>Contact Us</h2>
+        <form >
+            <div class="form-control">  
+            <div class="split">
+           
+                    <div class="form-split">
+                        <label >First Name <span class="star">*</span></label>
+                        <input type="text" class="first-name"/>
+                        <p class="error"></p>
+                    </div>
+                    <div class="form-split">
+                        <label >Last Name <span class="star">*</span></label>
+                        <input type="text" class="last-name">
+                        <p class="error"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-control">
+                <label >Email Address <span class="star">*</span></label>
+                <input type="email" class="email">
+                <p class="error"></p>
+            </div>
+            <div class="radio-control">
+                <label >Query Type <span class="star">*</span></label>
+                <div class="radio-controls">
+                <div class="split-radio">
+                    <input type="radio" name="query" value="General Enquiry">
+                    <span>General Enquiry</span>
+                </div>
+                <div class="split-radio">
+                    <input type="radio" name="query" value="Support Request">
+                    <span>Support Request</span>
+                </div>
+            </div>
+            </div>
+            <div class="form-control">
+                <label >Message *</label>
+                <div class="message">
+                    <textarea rows="5" class="txt-message"></textarea>
+                </div>
+                <p class="error"></p>
+            </div>
+            <div class="terms">
+                <div class="terms-wrapper">
+                    <input type="checkbox" class="termsCondition">
+            </div>
+<p>I consent to being contacted by the team</p>
+<p class="error">To submit this form , please consent to being contacted</p>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Contact Us
+
+  First Name
+  This field is required
+
+  Last Name
+  This field is required
+
+  Email Address
+  Please enter a valid email address
+  This field is required
+
+  Query Type
+  General Enquiry
+  Support Request
+  Please select a query type
+
+  Message
+  This field is required
+
+  I consent to being contacted by the team
+  To submit this form, please consent to being contacted
+
+  Submit
+
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon! -->
+  <script src="./app.js"></script>
+</body>
+</html>
