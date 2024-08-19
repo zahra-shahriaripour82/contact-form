@@ -4,12 +4,9 @@ const lastNameEl = document.querySelector(".last-name");
 const emailEl = document.querySelector(".email");
 const messageEl = document.querySelector(".txt-message");
 const messageParent = document.querySelector(".message");
-console.log(firstNameEl);
-const radioControl=document.querySelector(".split-radio")
-console.log(radioControl);
-const submtSucc=document.querySelector(".sucsee")
+const radioControl = document.querySelector(".split-radio");
+const submtSucc = document.querySelector(".sucsee");
 const btnRadio = document.querySelector(".btn-radio");
-console.dir(btnRadio);
 
 const btnEl = document.querySelector("button");
 const termEl = document.querySelector(".termsCondition");
@@ -26,7 +23,7 @@ function errorHandle() {
   const textMessage = messageEl.value.trim();
   const checked = btnRadio.checked;
   console.log(checked);
-  
+
   // for first name
   if (firstName === "") {
     showError(firstNameEl, "This field is required");
@@ -50,11 +47,14 @@ function errorHandle() {
   if (checked) {
     showError(radioControl, "This field is required");
     console.log("zahra");
-    
   } else {
     setSuccess(btnRadio);
   }
-  if(termEl.checked==false) showError( termEl,"To submit this form , please consent to being contacted")
+  if (termEl.checked == false)
+    showError(
+      termEl,
+      "To submit this form , please consent to being contacted"
+    );
 }
 
 // show error message
@@ -82,7 +82,11 @@ const isValidEmail = (email) => {
   return emailRegex.test(email);
 };
 
-const showSumitMessage=()=>{
-  if(!firstNameEl.value==="" ||!emailEl.value==""||!lastNameEl.value=="")
-    setSuccess.style.display="block"
-}
+const showSumitMessage = () => {
+  if (
+    !firstNameEl.value === "" ||
+    !emailEl.value == "" ||
+    !lastNameEl.value == ""
+  )
+    setSuccess.style.display = "block";
+};
