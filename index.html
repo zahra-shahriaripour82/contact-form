@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 <link rel="stylesheet" href="./fonts/Karla-Italic-VariableFont_wght.ttf">
 <link rel="stylesheet" href="./fonts/Karla-VariableFont_wght.ttf">
-
+<link rel="stylesheet" href="./fontawesome/css/all.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
   <title>Contact form</title>
@@ -17,8 +17,15 @@
   </style> -->
 </head>
 <body>
-
+    <div class="sucsee">
+        <h5>  
+            <i class="fa-solid fa-circle-check  icons" ></i>
+            Message Sent!
+            </h5>   
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
 <div class="container">
+    
     <div class="wrapper">
         <h2>Contact Us</h2>
         <form >
@@ -67,9 +74,9 @@
                     <input type="checkbox" class="termsCondition">
             </div>
 <p>I consent to being contacted by the team</p>
-<p class="error">To submit this form , please consent to being contacted</p>
+<p class="error"></p>
             </div>
-            <button>Submit</button>
+            <button onclick="showSumitMessage()">Submit</button>
         </form>
     </div>
 </div>

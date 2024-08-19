@@ -24,6 +24,27 @@ min-height:100vh;
 padding: 1.5rem;
 
 }
+.sucsee{
+    width:250px;
+    height:70px;
+    color: var(--GreyMedium);
+    background-color: var(--GreyDarker);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+font-size: 0.5rem;
+border-radius:5px;
+padding: 0.3rem 1rem;
+display: none;
+}
+.sucsee h5{
+    margin-top:10px;
+    font-size: 0.75rem;
+    color:white;
+    margin-right:100px;
+    
+}
 .wrapper{
     background-color: var(--White);
     padding: 2rem;
@@ -139,8 +160,13 @@ label,span{
  form button:focus{
     transform: scale(0.98);
  }
- input,:hover{
+ form button:hover{
+    background-color: var(--GreyDarker);
+ }
+ input,.txt-message,.email:hover{
     cursor: pointer;
+    border: 1px solid var(--Green);
+
  } 
  .error{
     font-size: 0.75rem;

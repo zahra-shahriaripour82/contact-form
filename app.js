@@ -5,7 +5,9 @@ const emailEl = document.querySelector(".email");
 const messageEl = document.querySelector(".txt-message");
 const messageParent = document.querySelector(".message");
 console.log(firstNameEl);
-
+const radioControl=document.querySelector(".split-radio")
+console.log(radioControl);
+const submtSucc=document.querySelector(".sucsee")
 const btnRadio = document.querySelector(".btn-radio");
 console.dir(btnRadio);
 
@@ -45,12 +47,14 @@ function errorHandle() {
     showError(messageParent, "This field is required");
     messageEl.style = "border: 1px solid var(--Red);";
   }
-  if (checked === false) {
-    showError(btnRadio, "This field is required");
-   
+  if (checked) {
+    showError(radioControl, "This field is required");
+    console.log("zahra");
+    
   } else {
     setSuccess(btnRadio);
   }
+  if(termEl.checked==false) showError( termEl,"To submit this form , please consent to being contacted")
 }
 
 // show error message
@@ -77,14 +81,8 @@ const isValidEmail = (email) => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 };
-//checkbox handel
-const checkboHandle = () => {
-  btnRadio.forEach((radio) => {
-    radio.addEventListener("click", () => {
-      btnRadio.forEach((ele) => ele.parentElement.classList.remove("active"));
 
-      if (radio-checked == true) radio.parentElement.classList.add("active");
-    });
-  });
-};
-checkboHandle()
+const showSumitMessage=()=>{
+  if(!firstNameEl.value==="" ||!emailEl.value==""||!lastNameEl.value=="")
+    setSuccess.style.display="block"
+}
